@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title>Firecracker | tyler shuster | weblog</title>
+    <meta name="generator" content="DocPad v6.78.4" />
+    <style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <nav>
+      <ul>
+        
+          <li class="">
+            <a href="/index.html">index</a>
+          </li>
+        
+      </ul>
+    </nav>
+
+    <article class="poem">
+      <h1>Firecracker</h1>
+      
+      <p>I do not feel your grief and your tears are not mine,</p><p>nor is your country.</p><p>But I bleed and I bruise, even as you are torn apart.</p><p>And I love and I lose, even as you die naked in your streets.</p><p>And I hope for more even as you lose all that you once had fighting that your children may live to see a tomorrow.</p><p>A tomorrow free of dismembered corpses rotting in ash and a tomorrow where the sun is not obscured by the fire of a nation’s hate against itself—of one man’s crusade.</p><p>For we are both men—flesh and blood, though you more than I,</p><p>And we both live, though you more than I, even while less.</p><p>And we both hope, though you simpler, though you greater.</p><p>And we both die, though you sooner, though you never.</p><p>My struggles are but firecrackers and I jump to hear them and I bitch and i call my senator and pass a law to outlaw firecrackers.</p><p>But yours-yours are the coordinated missile strikes of a man you once trusted</p><p>—and all you can do is hope—</p><p>hope that a picture of your severed torso</p><p>—you and your brother’s(whom you loved so dearly)—</p><p>will touch the calloused heart of someone who can change something—anything.</p><p>And maybe—maybe—you will have changed the world.</p><p>But you will unquestionably have lived a better life than I—a child who jumps at firecrackers.</p></p><p>
+    </article>
+
+</body>
+<script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/docpad-livereload/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script>
+</html>

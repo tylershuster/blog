@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title>The Death of the Water Drinker | tyler shuster | weblog</title>
+    <meta name="generator" content="DocPad v6.78.4" />
+    <style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <nav>
+      <ul>
+        
+          <li class="">
+            <a href="/index.html">index</a>
+          </li>
+        
+      </ul>
+    </nav>
+
+    <article class="poem">
+      <h1>The Death of the Water Drinker</h1>
+      
+      <p>He came to me in wintertime;</p><p>the snow fell softly down.</p><p>The birds had ceased their warbled songs;</p><p>a restless peace had grown.</p></p><p><hr></p><p><p>He told me of his people&#39;s past</p><p>and what they&#39;d come to be.</p><p>I told him of their future paths -</p><p>the things they&#39;d come to see.</p></p><p><hr></p><p><p>I sung to him of dyings when</p><p>the beasts would run no more.</p><p>I sung to him of warring times,</p><p>when brothers&#39;d come ashore.</p></p><p><hr></p><p><p>He heard my words with rapt attent.</p><p>He drank his water slow</p><p>and as I spoke, his tears awoke</p><p>and fell like Winter&#39;s snow.</p></p><p><hr></p><p><p>The land would die, I said to him:</p><p>he&#39;d live in shacks of stone.</p><p>The buffalo had passed away</p><p>in stead a web was woven</p></p><p><hr></p><p><p>His friends would shrink to few</p><p>And they&#39;d live in borrowed tombs</p><p>A specter of their glory</p><p>Their children dead in wombs.</p></p><p><hr></p><p><p>His heart all fell to ashes</p><p>His face took somber hue</p><p>He begged to me for mercy</p><p>but nothing could I do.</p></p><p><hr></p><p><p>He wrote my words, the wise to see</p><p>That they might stem the tide</p><p>And as a knell he sorry fell</p><p>The water drinker died.</p></p><p>
+    </article>
+
+</body>
+<script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/docpad-livereload/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script>
+</html>

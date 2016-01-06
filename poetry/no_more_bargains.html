@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title>No More Bargains | tyler shuster | weblog</title>
+    <meta name="generator" content="DocPad v6.78.4" />
+    <style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <nav>
+      <ul>
+        
+          <li class="">
+            <a href="/index.html">index</a>
+          </li>
+        
+      </ul>
+    </nav>
+
+    <article class="poem">
+      <h1>No More Bargains</h1>
+      
+      <p>No more pleas/no more bargains just talk</p><p>You &amp; i in this postponed calm.</p><p>Tell me who you are / how I came to be</p><p>What plans you have / your dreams</p><p>Teach me to stand/amble/hobble/walk/run/falter</p><p>Teach me to rise &amp; leap &amp; fly</p><p>Teach me the words concealed until now</p><p>Teach me how to hear that faintest voice</p><p>That never fades into the too-distant.</p></p><p><hr></p><p><p>I know that voice</p><p>From the brushes of my last lips,</p><p>From quiet amniosis</p><p>From the thousands I have been to the I Am</p></p><p><hr></p><p><p>I know that voice</p><p>From the deepest places</p><p>From crisp supernovae</p><p>From silent furnaces hung like chandeliers in the peak-ed ethereal chapel</p><p>From prismatic tones of starlight on the atmosphere</p></p><p><hr></p><p><p>I know that voice</p><p>From the struggling pale gusts from my mouth</p><p>From the soaked &amp; oaky utterances of strangers</p><p>From the silences between linked &amp; lusting eyes</p></p><p><hr></p><p><p>Its words are the psalmist&#39;s poems and the flowing prose of history;</p><p>The strictest rows of woven code,</p><p>The growing moans of poet&#39;s hope.</p><p>Your words are these &amp; the millions more that drop/ripple/fade/sink</p><p>My words are yours - my voice - yours - and each day now growing so am I</p></p><p>
+    </article>
+
+</body>
+<script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/docpad-livereload/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script>
+</html>

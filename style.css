@@ -1,0 +1,51 @@
+body {
+  font-family: Gentium;
+  padding: 2rem;
+  margin: 0;
+}
+
+article.poem {
+  text-align: left;
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 20rem;
+  margin: 0 auto;
+  justify-content: flex-start;
+  width: 100%;
+}
+article.poem h1, article.poem h2, article.poem h3 {
+  text-align: center;
+  width: 100%;
+}
+article.poem p {
+  width: 100%;
+  margin: 0;
+  line-height: 1.62;
+  text-indent: -1rem;
+  padding-left: 1rem;
+}
+article.poem p:empty {
+  display: none;
+}
+article.poem hr {
+  width: 100%;
+  border: none;
+  border-top: 1px dotted rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  float: left;
+  width: 100%;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+nav ul li {
+  display: block;
+  float: left;
+}

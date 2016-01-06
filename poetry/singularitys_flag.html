@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title>Singularity's Flag | tyler shuster | weblog</title>
+    <meta name="generator" content="DocPad v6.78.4" />
+    <style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <nav>
+      <ul>
+        
+          <li class="">
+            <a href="/index.html">index</a>
+          </li>
+        
+      </ul>
+    </nav>
+
+    <article class="poem">
+      <h1>Singularity's Flag</h1>
+      
+      <p>I ran to the end of the world (and time)</p><p>Singularity&#39;s flag unfurled (and mine),</p><p>to stake Man&#39;s claim in the yawning abyss,</p><p>where the beast lay waiting just for this.</p><p>Tendrils of code grasping for souls,</p><p>digital oblivion; mechanical pulse.</p><p>No more death means no new life:</p><p>death of self is death of strife.</p><p>You can take my life; I&#39;ve seen its end -</p><p>In swirling mu; in faceless friends,</p><p>In friendless faces, in cosmic spaces</p><p>meant for no man to see; just be;</p><p>but by my prying fingers and with my eyes</p><p>a day too soon I&#39;ve spied the surprise</p><p>Enough to swerve and die in time</p></p><p>
+    </article>
+
+</body>
+<script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/docpad-livereload/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script>
+</html>
